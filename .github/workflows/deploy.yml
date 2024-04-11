@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME
-        run: echo "newsletter.racca.me" > CNAME
+        run: echo "newsletter.racca.me" > ./build/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
