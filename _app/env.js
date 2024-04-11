@@ -1,0 +1,1 @@
+export const env={"PUBLIC_API_ENDPOINT":"https://api.racca.me/newsletter/sub","PUBLIC_API_REQUEST_METHOD":"POST"}
