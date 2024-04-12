@@ -40,8 +40,10 @@
 </script>
 
 
-<div on:mousemove={handleMouseMove} role="none">
-  <span class='error-num'>4</span>
+<div on:mousemove={handleMouseMove} role="none" class="wrapper">
+  <p class="error-num">
+    4<span>00</span>
+  </p>
   <div class='eye'></div>
   <div class='eye'></div>
   <p class='sub-text'>Oh eyeballs! Something went wrong: {error}</p>
@@ -52,6 +54,11 @@
 <style lang="scss">
   .error-num {
     font-size: 8em;
+    display: inline;
+
+    span {
+      display: none;
+    }
   }
 
   .eye {
@@ -74,17 +81,33 @@
     }
   }
 
-  p {
-    margin-bottom: 4em;
+  .sub-text {
+    margin-bottom: 10px;
   }
 
   a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 5px;
+    border-radius: 5px;
 
     &:hover {
       color: lightgray;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .eye {
+      display: none;
+    }
+
+    .error-num {
+      font-size: clamp(10px, 8vw, 150px);
+      span {
+        display: inline;
+      }
     }
   }
 </style>

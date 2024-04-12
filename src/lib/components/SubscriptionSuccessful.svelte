@@ -51,4 +51,14 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .container {
+      .thank-you {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 </style>

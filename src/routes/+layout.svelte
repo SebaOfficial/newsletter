@@ -25,8 +25,9 @@
     text-align: center;
 
     .wrapper {
-      width: 50%;
-      height: 50%;
+      margin: 20px;
+      min-width: 50%;
+      min-height: 50%;
       padding: 20px;
       border-radius: 20px;
       color: white;
