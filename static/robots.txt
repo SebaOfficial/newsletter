@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://newsletter.racca.me/sitemap.xml
