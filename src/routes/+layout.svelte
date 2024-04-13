@@ -49,3 +49,9 @@
     z-index: -1;
   }
 </style>
+
+{#if process.env.NODE_ENV === 'production'}
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon={'{"token": "db63fe38f3574073b60b89024c306d25"}'}></script>
+  <!-- End Cloudflare Web Analytics -->
+{/if}
